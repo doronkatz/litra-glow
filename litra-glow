@@ -61,7 +61,9 @@ EOF
 basedir="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
 function _hid() {
-  "$basedir/hidapitester" --vidpid 046D/C900 --open --length 20 --send-output $1
+  "$basedir/hidapitester" --vidpid 046D/B901 --open --length 20 --send-output $1
+    "$basedir/hidapitester" --vidpid 046D/B901 --open --length 20 --send-output $1
+
 }
 
 #
